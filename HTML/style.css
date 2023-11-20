@@ -1,0 +1,100 @@
+*{
+    font-family: cursive;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    width: 100%;
+    min-height: 100vh;
+    padding: 10px;
+    background-color: rgb(51, 4, 4);
+}
+.todo-App{
+    width: 100%;
+    max-width: 540px;
+    background-color: burlywood;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}
+.todo-App h2{
+    color: #002765;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.todo-App h2 img{
+    margin-left: 10px;
+    width: 30px;
+}
+.row{
+    display: flex;
+    padding-left: 20px;
+    justify-content: space-between;
+    background: white;
+    margin-bottom: 25px;
+    border-radius: 30px;
+}
+input{
+    border: none;
+    outline: none;
+    padding: 10px;
+    background: transparent;
+}
+button{
+    border: none;
+    outline: none;
+    font-size: medium;
+    background-color: white;
+    background: brown;
+    border-radius: 40px;
+    padding: 16px 50px;
+    cursor: pointer;
+}
+ul li{
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width:28px ;
+    border-radius: 50%;
+    background-image: url("https://as2.ftcdn.net/v2/jpg/05/70/45/63/1000_F_570456372_Mb1GHQNnTW53Dji8X9qPZQI3jqgWVEPl.webp");
+    background-size: cover;
+    background-position: center;
+    top: 12px ;
+    left: 8px;
+};
+ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+}
+ul li.checked::before{
+    background-image: url("https://cdn.xxl.thumbs.canstockphoto.com/check-circle-icon-check-list-button-icon-check-mark-in-round-sign-image_csp51019174.jpg");
+     
+}
+ ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+ }
+ul li span:hover{
+    background: white;
+
+
+}
+ 
